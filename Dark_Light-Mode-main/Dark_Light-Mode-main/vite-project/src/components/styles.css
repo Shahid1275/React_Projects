@@ -1,0 +1,59 @@
+/* styles.css
+:root {
+    --bg-color-light: #ffffff;
+    --text-color-light: #000000;
+    --bg-color-dark: #1a202c; 
+    --text-color-dark: #ffffff;
+  }
+  
+  
+  body {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  
+  body.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+  }
+   */
+   /* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark-mode {
+    background-color: #1a202c; /* Gray-900 */
+    color: #ffffff;
+  }
+  
+  .light-mode {
+    background-color: #ffffff;
+    color: #1a202c; /* Dark gray */
+  }
+  
+  /* Ensure the content is centered vertically and horizontally */
+  .min-h-screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
