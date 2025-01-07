@@ -1,0 +1,206 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+/* General Reset */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f7fc;
+}
+
+/* Card Container */
+.card {
+  background: #6948fd;
+  border: 2px solid #000; /* Black border around the card */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover transition */
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Avatar/Image Section */
+.avatar-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease; /* Add hover transition */
+}
+
+.avatar-container:hover {
+  transform: scale(1.1); /* Enlarge the avatar on hover */
+}
+
+.avatar-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Name Section */
+.card h1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+.card h1:hover {
+  color: #fff; /* Change text color on hover */
+}
+
+/* Description Section */
+.card p {
+  font-size: 0.85rem;
+  color: #e5dfdf;
+  margin: 0;
+  line-height: 1.4;
+  padding: 0 10px;
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+.card p:hover {
+  color: #fff; /* Change text color on hover */
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.skill {
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Add hover transition */
+}
+
+.skill:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+  filter: brightness(1.2); /* Brighten the background color */
+}
+
+/* Individual Skill Colors */
+.skill.html {
+  background-color: #e44d26; /* HTML Orange */
+}
+
+.skill.css {
+  background-color: #1572b6; /* CSS Blue */
+}
+
+.skill.javascript {
+  background-color: #f7df1e; /* JavaScript Yellow */
+  color: #000; /* Adjust for readability */
+}
+
+.skill.react {
+  background-color: #61dafb; /* React Cyan */
+  color: #000; /* Adjust for readability */
+}
+
+.skill.git {
+  background-color: #f05033; /* Git Red */
+}
+
+.skill.problem-solving {
+  background-color: #b29849; /* Problem-Solving Brown */
+}
+
+.skill.svelte {
+  background-color: #75b367; /* Svelte Green */
+}

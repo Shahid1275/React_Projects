@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "React_Projects",
+			"path": "../../.."
+		},
+		{
+			"name": "React-Coding-Challenges-main",
+			"path": "../../../../React-Coding-Challenges-main"
+		},
+		{
+			"name": "Flash_Cards-main",
+			"path": "../../../../Flash_Cards-main"
+		},
+		{
+			"name": "Developer-portfolio-Card-main",
+			"path": "../../../../Developer-portfolio-Card-main"
+		}
+	],
+	"settings": {}
+}
